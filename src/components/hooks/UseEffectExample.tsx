@@ -10,7 +10,14 @@ const UseEffectExample: React.FC = () => {
   }, []);
 
   return (
-    <VStack>
+    <VStack
+      borderSpacing={4} // Korrigiert borderSpacing zu spacing
+      p={4}
+      border="1px"
+      borderColor="gray.300"
+      borderRadius="md"
+      boxShadow="md"
+    >
       <Text fontSize="xl">Timer: {seconds} Sekunden</Text>
       <Button colorScheme="blue" onClick={() => setSeconds(0)}>
         Zurücksetzen
