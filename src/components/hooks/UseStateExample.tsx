@@ -1,20 +1,28 @@
 import React, { useState } from "react";
-import { VStack, Text, Button, Box } from "@chakra-ui/react";
+import { Stack, StackSeparator, Text, Button, Box } from "@chakra-ui/react";
 
 const UseStateExample: React.FC = () => {
   const [count, setCount] = useState<number>(0);
 
   return (
-    <VStack
-      borderSpacing={4}
+    <Stack
+      separator={<StackSeparator />}
       p={4}
-      border="1px"
-      borderColor="gray.300"
+      margin={4}
+      border="2px solid"
+      borderColor="black"
       borderRadius="md"
       boxShadow="md"
+      bg="rgba(128, 0, 128, 0.4)"
+      transition="all 0.3s ease-in-out"
+      _hover={{
+        borderColor: "purple.300",
+        bg: "rgba(128, 0, 128, 0.6)",
+        transform: "scale(1.02)",
+      }}
     >
-      <Text fontSize="2xl" fontWeight="bold">
-        Zähler: {count}
+      <Text fontSize="xl" fontWeight="bold">
+        useState Example
       </Text>
       <Box>
         <Button colorScheme="teal" onClick={() => setCount(count + 1)} mr={2}>
@@ -27,7 +35,7 @@ const UseStateExample: React.FC = () => {
           Zurücksetzen
         </Button>
       </Box>
-    </VStack>
+    </Stack>
   );
 };
 
