@@ -25,7 +25,12 @@ const UseStateExample: React.FC = () => {
         useState Example
       </Text>
       <Box>
-        <Button colorScheme="teal" onClick={() => setCount(count + 1)} mr={2}>
+        <Button
+          margin={2}
+          colorScheme="teal"
+          onClick={() => setCount(count + 1)}
+          mr={2}
+        >
           Erhöhen
         </Button>
         <Button colorScheme="orange" onClick={() => setCount(count - 1)} mr={2}>

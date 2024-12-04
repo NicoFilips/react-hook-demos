@@ -15,16 +15,16 @@ const UseEffectExample: React.FC = () => {
       separator={<StackSeparator />}
       p={4}
       margin={4}
-      border="2px solid" // Starker schwarzer Rand
+      border="2px solid"
       borderColor="black"
-      borderRadius="md" // Runde Ecken
+      borderRadius="md"
       boxShadow="md"
-      bg="rgba(128, 0, 128, 0.4)" // Transparentes Lila
-      transition="all 0.3s ease-in-out" // Übergang für Standard- und Hover-Zustand
+      bg="rgba(128, 0, 128, 0.4)"
+      transition="all 0.3s ease-in-out"
       _hover={{
-        borderColor: "purple.300", // Hellere Randfarbe beim Hover
-        bg: "rgba(128, 0, 128, 0.6)", // Etwas dunklerer Hintergrund beim Hover
-        transform: "scale(1.02)", // Leichtes Vergrößern beim Hover
+        borderColor: "purple.300",
+        bg: "rgba(128, 0, 128, 0.6)",
+        transform: "scale(1.02)",
       }}
     >
       <Tooltip content="React useEffect Hook">
