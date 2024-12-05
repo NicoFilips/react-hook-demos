@@ -12,7 +12,7 @@ import UseRefExample from "./components/hooks/UseRefExample";
 import UseMemoExample from "./components/hooks/UseMemoExample";
 import HeaderBar from "./components/header-bar";
 import UseReducerExample from "./components/hooks/UseReducerExample";
-import { ColorModeButton, ColorModeProvider } from "./components/ui/color-mode";
+import { ColorModeProvider } from "./components/ui/color-mode";
 
 const App: React.FC = () => (
   <ChakraProvider value={defaultSystem}>
