@@ -8,7 +8,8 @@ import {
   IconButton,
   Link,
 } from "@chakra-ui/react";
-import { VscGithub } from "react-icons/vsc";
+import { ImGithub } from "react-icons/im";
+import { ColorModeButton } from "./ui/color-mode";
 
 const HeaderBar: React.FC = () => {
   return (
@@ -33,10 +34,11 @@ const HeaderBar: React.FC = () => {
         <Spacer />
 
         <Link href="https://github.com/NicoFilips/react-hook-demos">
-          <IconButton>
-            <VscGithub />
+          <IconButton margin={2} size="md">
+            <ImGithub color="white" />
           </IconButton>
         </Link>
+        <ColorModeButton margin={2} size="md" />
 
         <HStack margin={4}></HStack>
       </Flex>
